@@ -1,0 +1,22 @@
+$myblue: #3bbfce;
+
+p{
+    color: $myblue;
+}
+
+li{
+    color: $myblue;
+}
+
+mixin p-base{
+    background-color: gray;        //p-baseに{}内のスタイルを代入でき、includeで引き出す。
+    color:blue;
+}
+
+p{
+    @include p-base;
+}
+
+li{
+    @include p-base
+}
